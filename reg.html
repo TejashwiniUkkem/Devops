@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+body {
+background-image: url("event.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.form-container {
+background-image: url("event2.jpeg");
+background-repeat: no-repeat;
+background-size: cover; /* Or use 'contain' if you prefer */
+padding: 20px;
+border-radius: 10px;
+width: 100%;
+max-width: 500px;
+}
+h1 {
+text-align: center;
+}
+label {
+display: block;
+margin-bottom: 10px;
+}
+input[type="text"], input[type="password"] {
+width: 94%;
+padding: 15px;
+font-size: 16px;
+border-radius: 5px;
+border: none;
+margin-bottom: 10px;
+}
+.radio-group {
+display: flex;
+justify-content: space-around;
+
+margin-bottom: 20px;
+}
+.radio-group label {
+display: flex;
+align-items: center;
+margin: 0;
+}
+.radio-group input[type="radio"] {
+margin-right: 5px;
+}
+button {
+display: block;
+width: 100%;
+padding: 15px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #45a049;
+}
+</style>
+<script>
+function register() {
+// Display a success message
+alert("Successfully Registered!");
+}
+</script>
+</head>
+<body>
+<div class="form-container">
+<h1>Registration Form For Dancing Competition</h1>
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter Name">
+<label for="phone">Phone Number</label>
+<input type="text" id="phone" placeholder="Enter Phone Number">
+<label for="email">Email</label>
+<input type="text" id="email" placeholder="Enter Email">
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Enter Password">
+<label for="solo or group performance">solo or group</label>
+<input type="text" id="solo or group performamce" placeholder="Enter type of performance">
+<label for="gender">Gender</label>
+<div class="radio-group">
+<label for="male">
+<input type="radio" id="male" name="gender" value="male">
+
+Male
+</label>
+<label for="female">
+<input type="radio" id="female" name="gender" value="female">
+Female
+</label>
+</div>
+<label for="event-date">Event Date</label>
+<div class="radio-group">
+<label for="date1">
+<input type="radio" id="date1" name="event-date" value="2024-09-15">
+September 15, 2024
+</label>
+<label for="date2">
+<input type="radio" id="date2" name="event-date" value="2024-09-22">
+September 22, 2024
+</label>
+<label for="date3">
+<input type="radio" id="date3" name="event-date" value="2024-09-29">
+September 29, 2024
+</label>
+</div>
+<button onclick="register()">Register</button>
+</div>
+</body>
+</html>
